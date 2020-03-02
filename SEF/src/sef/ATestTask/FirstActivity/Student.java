@@ -24,7 +24,7 @@ public class Student extends Person {
         this.schoolName = school;
     }
 
-    public void announce() {
+    public void announce(String s) {
         System.out.println("I am study in university" + schoolName);
     }
 }

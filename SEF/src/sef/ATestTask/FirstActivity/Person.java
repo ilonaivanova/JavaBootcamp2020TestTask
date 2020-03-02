@@ -3,7 +3,8 @@ package sef.ATestTask.FirstActivity;
 
 public class Person {
 
-	private String firstName;
+	public String setFirstName;
+    private String firstName;
 	private String secondName;
 	private int age;
 
@@ -50,7 +51,7 @@ public class Person {
 	}
 
 	//TODO 2 add all person info into announce() method
-	public void announce() {
+	public void announce(String s) {
 		System.out.println("My name is " + getFirstName() + "" + getSecondName() + "and I am" + getAge() + "years old");
 	}
 }

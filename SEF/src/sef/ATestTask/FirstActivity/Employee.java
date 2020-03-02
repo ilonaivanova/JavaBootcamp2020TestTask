@@ -11,20 +11,28 @@ public class Employee extends Person {
 
     //TODO 1 create different constructors
     //Behavior - default constructor
-    public Employee(){
-        this.name="Unknown";
+    public Employee(String name, int age, String jobTitle, int salary) {
+        this.name = "Unknown";
         this.age = 0;
         this.companyName = "Unknown";
         this.jobTitle = "Unknown";
+        this.salary = 0;
+        this.empId = 0;
     }
-
     //Behavior - parameterized constructor
-    public Employee(String name, int age, String title, String company) {
+    public Employee(String name, int age, String title, String company, double salary, int Id) {
         this.name = name;
         this.age = age;
         this.companyName = company;
         this.jobTitle = title;
+        this.salary = salary;
+        this.empId = Id;
     }
+
+    public Employee(String name) {
+        this.name = name;
+    }
+
     //TODO 2 add getters and setters
 // getter for String name
     public String getName() {
@@ -36,42 +44,51 @@ public class Employee extends Person {
         this.name = name;
     }
 
-    // getter for int age
-    public int getAge() {
-        return age;
-    }
-
-    // setter for int age
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    // getter for int age
+    // getter for String company
     public String getCompany() {
         return companyName;
     }
 
-    // setter for int age
+    // setter for String company
     public void setCompany(String company) {
         this.companyName = company;
     }
 
-    // getter for int age
+    // getter for String jobTitle
     public String getJobTitle() {
         return jobTitle;
     }
 
-    // setter for int age
+    // setter for String jobTitle
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
-    //TODO 3 override method announce()
-    public void announce(){
-        System.out.println("My name is" + name + "and i am" + age + "years old." +
-                " I work as" + jobTitle + "in" + companyName);
+    // getter for double salary
+    public double getSalary() {
+        return salary;
     }
 
+    // setter for double salary
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    // getter for int empId
+    public int getEmpId() {
+        return empId;
+    }
+
+    // setter for int empId
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    //TODO 3 override method announce()
+    {
+        System.out.println("My name is" + name + "and i am" + age + "years old." + " I work as" + jobTitle + "in" + companyName);
+
+}
 }
 
 

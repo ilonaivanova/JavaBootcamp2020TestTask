@@ -10,9 +10,9 @@ public class StudentTest extends TestCase {
 
     public void testEmptyConstructor() {
         Student student = new Student();
-        student.setSchoolName("Uni of Che");
+        student.setSchoolName("of Chester");
 
-        assertThat(student.getSchool(), is("UNI of Che"));
-        assertThat(student.announce(), is( "I am study in university" + student.getSchool());
+        assertEquals("I study in University", "of Chester", student.getSchool());
+        assertThat(student.getSchool(), is ("of Chester"));
         }
 }

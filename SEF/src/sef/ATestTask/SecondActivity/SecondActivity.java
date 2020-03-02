@@ -1,6 +1,6 @@
 package sef.ATestTask.SecondActivity;
 
-import java.util.Scanner;
+import junit.framework.TestCase;
 
 // Complete Code
 public class SecondActivity {
@@ -59,41 +59,60 @@ public class SecondActivity {
 		return divValue;
 	}
 }
+		//TODO create the Calculator (here or in additional class)
 
-
-	//TODO create the Calculator (here or in additional class)
-
-import java.util.*;
-import java.util.Scanner;
-
-public class MyCalculator {
+class MyCalculator {
 
 	public static void main(String[] args) {
-		int num1 = 0;
-		int num2 = 0;
-		char operator;
-		double answer = 0.0;
 
-		Scanner scanObject = new Scanner (System.in.);
+		int x = 10;
+		int y = 5;
 
-		System.out.println("Please enter first number:");
-		num1 = scanObject.nextInt();
-		System.out.println("Please enter second number:");
-		num2 = scanObject.nextInt();
-		System.out.println("What operation? ");
-		operator = scanObject.next().charAt(0);
+		int[] nums = {1, 2, 3, 4};
 
-		switch (operator) {
-			case '+': answer = num1 + num2;
-					break;
-			case '-': answer = num1 + num2;
-				break;
-			case '*': answer = num1 + num2;
-				break;
-			case '/': answer = num1 + num2;
-				break;
-		}
-		System.out.println(num1+" "+operator+" "+num2+" = "+answer);
+		System.out.println("Addition - " + add(x,y));
+		System.out.println("Subtraction - " + subtract(x,y));
+		System.out.println("Multiply - " + multiply(nums));
+		System.out.println("Divide - " + divide(x,y));
 
 	}
+
+
+	private static int add(int x, int y) {
+		int sum = x + y;
+		return sum;
+	}
+
+	private static int subtract(int x, int y) {
+		int diff = 0;
+		if (x > y) {
+			// complete the code
+		} else {
+			// complete the code
+		}
+
+		return diff;
+	}
+
+	private static int multiply(int[] numbers) {
+		int temp = 1;
+
+		for (int i = 0; i < numbers.length; i++) {
+			temp = temp * numbers[i];
+		}
+		return temp;
+
+	}
+
+	private static int divide(int x, int y) {
+		int divValue = 0;
+		if (x == 0 || y == 0) {
+			// complete the code
+		} else {
+			// complete the code
+		}
+		return divValue;
+
+	}
+
 }

@@ -27,7 +27,13 @@ public class ThirdActivity {
         boolean flag = false;
         //TODO if name in a list -> set flag=true
         // if at the end flag=0 -> throw the exeption
-    }
+
+                boolean "John", "Mike", "Missi", "Peacy" = true;
+                boolean int(0) = false;
+                System.out.println("John", "Mike", "Missi", "Peacy");
+                System.out.println(0);
+            }
+        }
 
     void catchMe(int num1, int num2)
     {
@@ -35,9 +41,22 @@ public class ThirdActivity {
             int result=num1/num2;
             System.out.println("The result is :" + result);
 
+            try{
+            System.out.println(num1/num2);
+            }
+            catch(Exception e)
+            {
+            System.out.println("The result is :" + result);
+            }
+
             //TODO prints a message "Thank you for using this program." always
             System.out.println("Thank you for using this program.");
-
+            try {
+            int[] myNumbers = {1, 2, 3};
+            System.out.println(myNumbers[10]);
+            }
+            catch (Exception e) {
+            System.out.println("Thank you for using this program.");
+            }
     }
-}
 

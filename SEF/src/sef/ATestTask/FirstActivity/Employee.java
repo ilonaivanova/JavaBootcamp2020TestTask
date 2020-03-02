@@ -19,7 +19,7 @@ public class Employee extends Person {
         this.salary = 0;
         this.empId = 0;
     }
-    //Behavior - parameterized constructor
+    //Behavior - parameterized constructors
     public Employee(String name, int age, String title, String company, double salary, int Id) {
         this.name = name;
         this.age = age;
